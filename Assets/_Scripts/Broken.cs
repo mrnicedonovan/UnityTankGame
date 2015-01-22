@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Broken : MonoBehaviour {
 
+	public AudioClip boom;
 	public int lives = 20;
 
 	// Use this for initialization
@@ -20,6 +21,7 @@ public class Broken : MonoBehaviour {
 			if(lives <= 0)
 			{
 				Destroy(this.gameObject);
+				audio.PlayOneShot(boom);
 			}
 		
 		}

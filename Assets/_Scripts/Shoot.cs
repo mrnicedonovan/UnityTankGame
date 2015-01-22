@@ -26,6 +26,8 @@ public class Shoot : MonoBehaviour {
 	void Update () {
 		if (Input.GetButtonDown("Fire1"))
 		{
+
+
 			Quaternion rotation = Quaternion.Euler(Vector3.up * Turret.transform.rotation.eulerAngles.y);
 
 			Instantiate(bulletPrefab, Nozzle.transform.position, rotation);
