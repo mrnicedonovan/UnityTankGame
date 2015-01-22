@@ -16,7 +16,6 @@ public class Broken : MonoBehaviour {
 
 	void OnCollisionEnter(Collision coll)
 	{
-		print("test123" + coll.gameObject.name);
 		if (coll.gameObject.name == "Shell(Clone)")
 		{
 			lives--;

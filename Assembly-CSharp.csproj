@@ -46,7 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\BaseRotateTurret.cs" />
      <Compile Include="Assets\_Scripts\Broken.cs" />
+     <Compile Include="Assets\_Scripts\EnemieRotateTurret.cs" />
+     <Compile Include="Assets\_Scripts\EnemieShoot.cs" />
      <Compile Include="Assets\_Scripts\Movement.cs" />
      <Compile Include="Assets\_Scripts\RotateTurretScript.cs" />
      <Compile Include="Assets\_Scripts\SelfDestruct.cs" />
