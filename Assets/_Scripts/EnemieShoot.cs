@@ -17,7 +17,7 @@ public class EnemieShoot : MonoBehaviour {
 
 		Transform[] transforms = this.gameObject.GetComponentsInChildren<Transform> ();
 		foreach (Transform t in transforms) {
-			if(t.gameObject.name == "Turret")
+		if(t.gameObject.name == "Turret")
 			{
 				Turret = t;
 			}
@@ -48,8 +48,6 @@ public class EnemieShoot : MonoBehaviour {
 
 		if(Physics.Raycast(myRay, out hitInfo,shootRange))
 		{
-
-			print (hitInfo.collider.gameObject.name);
 			//print("De Raycast ZIET!");
 			string hitObjectName = hitInfo.collider.gameObject.name;
 		

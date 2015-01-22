@@ -4,8 +4,9 @@ using System.Collections;
 public class BaseRotateTurret : MonoBehaviour {
 
 	private Transform[] transforms;
-	protected Transform turret;
+	protected Transform Turret;
 	protected Vector3 targetPos;
+	protected Transform Nozzle;
 
 
 	// Use this for initialization
@@ -18,8 +19,13 @@ public class BaseRotateTurret : MonoBehaviour {
 		{
 			if (t.gameObject.name == "Turret")
 			{
-				turret = t;
+				Turret = t;
 				turretFound = true;
+			}
+			if(t.gameObject.name == "Nozzle")
+			{
+				Nozzle = t;
+
 			}
 		}
 
@@ -32,6 +38,6 @@ public class BaseRotateTurret : MonoBehaviour {
 	// Update is called once per frame
 	protected virtual void Update () {
 
-		turret.LookAt (targetPos);	
+		Turret.LookAt (targetPos);	
 	}
 }
